@@ -48,6 +48,7 @@ def c_frequency():
                         teslad[word] = 1
                 else:
                         teslad[word] += 1
+    #Got this from stack overlow as well, puts the most common words in a word cloud
     wc = WordCloud(background_color="white",width=1000,height=1000, max_words=100,relative_scaling=0.5,normalize_plurals=False).generate_from_frequencies(teslad)
     plt.imshow(wc)
     #An improvement I could make is getting rid of common words like "the"

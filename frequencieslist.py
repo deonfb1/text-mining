@@ -13,7 +13,7 @@ reddit = praw.Reddit(
 teslad = dict()
 
 #Change these to see word frequencies for different subreddits post and comments
-sub = 'teslainvestorsclub'
+sub = 'Bitcoin'
 submissions = reddit.subreddit(sub).top('month', limit=20)
 
 def h_frequency():
@@ -57,6 +57,6 @@ def c_frequency():
 c_frequency()
 #May take a while to run
 
-if __name__ == "__main__":
-    main() 
+#if __name__ == "__main__":
+    #main() 
 #Not sure i did this right?
